@@ -958,3 +958,147 @@ footer {
 
 }
 
+/* ========================================
+   NOVA PALETA - JORNAL OZZY
+======================================== */
+
+body {
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(112, 94, 80, .025),
+      rgba(112, 94, 80, .025) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    #E3BABE;
+}
+
+
+/* CABEÇALHO */
+
+.topo {
+  background: #98976B;
+  color: #F7EFDA;
+
+  border-color: #705E50;
+
+  box-shadow:
+    inset 1px 1px #c3c19a,
+    inset -2px -2px #705E50,
+    4px 4px rgba(112, 94, 80, .25);
+}
+
+
+/* MENU */
+
+.menu {
+  background: #F7EFDA;
+  border-color: #705E50;
+}
+
+.menu a {
+  border-right-color: #E3BABE;
+}
+
+.menu a:hover {
+  background: #E0949E;
+  color: #F7EFDA;
+}
+
+
+/* BARRAS DAS JANELAS */
+
+.barra-janela {
+  background:
+    linear-gradient(
+      90deg,
+      #705E50,
+      #98976B
+    );
+
+  color: #F7EFDA;
+}
+
+
+/* JANELAS */
+
+.janela,
+.card-noticia {
+  background: #F7EFDA;
+
+  border-color: #705E50;
+}
+
+
+/* CATEGORIAS */
+
+.categoria,
+.tag {
+  background: #E0949E;
+  color: #F7EFDA;
+}
+
+
+/* BOTÕES */
+
+.botao-retro {
+  background: #E3BABE;
+
+  border-top-color: #F7EFDA;
+  border-left-color: #F7EFDA;
+
+  border-right-color: #705E50;
+  border-bottom-color: #705E50;
+
+  color: #3f342d;
+}
+
+.botao-retro:hover {
+  background: #E0949E;
+}
+
+
+/* TIRINHAS / ANÚNCIOS */
+
+.anuncio-quadrinho {
+  background: #E3BABE;
+  border-color: #705E50;
+}
+
+.quadrinho-topo {
+  background:
+    linear-gradient(
+      90deg,
+      #705E50,
+      #98976B
+    );
+
+  color: #F7EFDA;
+}
+
+.quadrinho-imagem {
+  background: #F7EFDA;
+}
+
+.quadrinho-info span {
+  color: #705E50;
+}
+
+
+/* PUBLICIDADE */
+
+.publicidade {
+  background: #E3BABE;
+  border-color: #705E50;
+}
+
+
+/* RODAPÉ */
+
+footer {
+  background: #98976B;
+  color: #F7EFDA;
+
+  border-color: #705E50;
+}
