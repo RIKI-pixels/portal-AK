@@ -763,3 +763,184 @@ footer {
   }
 
 }
+
+/* ========================================
+   LOGO DO CABEÇALHO
+======================================== */
+
+.logo-edicao {
+  min-width: 220px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  padding-left: 20px;
+}
+
+
+.logo-edicao img {
+  display: block;
+
+  width: auto;
+  height: auto;
+
+  max-width: 230px;
+  max-height: 110px;
+
+  object-fit: contain;
+}
+
+
+/* ========================================
+   TIRINHAS COMO PUBLICIDADE
+======================================== */
+
+.anuncio-quadrinho {
+  position: relative;
+
+  background: #e6dfcc;
+
+  border: 2px solid #666156;
+
+  padding: 4px;
+
+  box-shadow:
+    inset 1px 1px #ffffff,
+    inset -1px -1px #999385,
+    3px 3px rgba(0,0,0,.20);
+}
+
+
+.quadrinho-topo {
+  min-height: 25px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #174c48,
+      #28645e
+    );
+
+  color: #f4eedc;
+
+  padding: 4px 7px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: "Pixelify Sans", sans-serif;
+
+  font-size: 12px;
+}
+
+
+.quadrinho-imagem {
+  margin-top: 4px;
+
+  background: #f4efdf;
+
+  border:
+    2px inset #aaa493;
+
+  overflow: hidden;
+}
+
+
+.quadrinho-imagem img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  filter:
+    contrast(.95)
+    saturate(.85);
+
+  transition:
+    transform .15s,
+    filter .15s;
+}
+
+
+.anuncio-quadrinho:hover
+.quadrinho-imagem img {
+
+  transform: scale(1.015);
+
+  filter:
+    contrast(1)
+    saturate(1);
+}
+
+
+.quadrinho-info {
+  padding: 8px 6px 6px;
+
+  text-align: center;
+
+  border-top:
+    1px solid #aaa493;
+}
+
+
+.quadrinho-info strong {
+  display: block;
+
+  font-family:
+    "Pixelify Sans",
+    sans-serif;
+
+  font-size: 16px;
+
+  margin-bottom: 5px;
+}
+
+
+.quadrinho-info span {
+  font-family:
+    "Pixelify Sans",
+    sans-serif;
+
+  font-size: 10px;
+
+  color: #174c48;
+
+  letter-spacing: 1px;
+}
+
+
+/* aspecto levemente torto
+   de recorte de jornal */
+
+.sidebar .anuncio-quadrinho:nth-of-type(odd) {
+  transform: rotate(-0.15deg);
+}
+
+.sidebar .anuncio-quadrinho:nth-of-type(even) {
+  transform: rotate(0.12deg);
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 800px) {
+
+  .logo-edicao {
+    width: 100%;
+
+    padding-left: 0;
+
+    justify-content: flex-start;
+  }
+
+
+  .logo-edicao img {
+    max-width: 190px;
+    max-height: 90px;
+  }
+
+}
