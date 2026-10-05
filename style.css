@@ -1,0 +1,765 @@
+:root {
+  --verde: #174c48;
+  --verde-escuro: #103b38;
+
+  --papel: #ddd6c3;
+  --papel-claro: #eee9db;
+
+  --azul: #286392;
+  --azul-claro: #397caf;
+
+  --borda: #777468;
+
+  --texto: #262822;
+}
+
+
+/* ==============================
+   BASE
+================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(0,0,0,.025),
+      rgba(0,0,0,.025) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    #bcb5a1;
+
+  color: var(--texto);
+
+  font-family: "Special Elite", serif;
+}
+
+
+/* ==============================
+   CABEÇALHO
+================================ */
+
+.topo {
+  max-width: 1180px;
+
+  margin: 18px auto 0;
+  padding: 20px;
+
+  background: var(--verde);
+  color: #eee8d6;
+
+  border: 2px solid #102e2b;
+
+  box-shadow:
+    inset 1px 1px #6f8f87,
+    inset -2px -2px #082b28,
+    4px 4px rgba(0,0,0,.2);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo-area h1 {
+  font-family: "Pixelify Sans", sans-serif;
+
+  font-size: 52px;
+  letter-spacing: 4px;
+
+  margin: 0;
+}
+
+
+.logo-area p {
+  margin: 4px 0 0;
+
+  font-size: 14px;
+}
+
+
+.data {
+  text-align: right;
+
+  font-family: "Pixelify Sans";
+}
+
+.data span {
+  display: block;
+
+  margin-top: 5px;
+
+  font-size: 13px;
+}
+
+
+/* ==============================
+   MENU
+================================ */
+
+.menu {
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  background: #d8d1be;
+
+  border:
+    2px solid var(--borda);
+
+  padding: 5px;
+
+  display: flex;
+}
+
+
+.menu a {
+  color: #222;
+  text-decoration: none;
+
+  font-family: "Pixelify Sans";
+
+  padding: 9px 18px;
+
+  border-right: 1px solid #858174;
+}
+
+
+.menu a:hover {
+  background: var(--azul);
+  color: white;
+}
+
+
+/* ==============================
+   LAYOUT
+================================ */
+
+.pagina {
+  max-width: 1180px;
+
+  margin: 15px auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    310px;
+
+  gap: 15px;
+}
+
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+
+/* ==============================
+   JANELAS WINDOWS
+================================ */
+
+.janela {
+  background: var(--papel-claro);
+
+  border: 2px solid #817d70;
+
+  box-shadow:
+    inset 1px 1px white,
+    inset -1px -1px #aaa493,
+    3px 3px rgba(0,0,0,.18);
+}
+
+
+.barra-janela {
+  height: 31px;
+
+  padding-left: 8px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #1c5887,
+      #3c83b4
+    );
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: "Pixelify Sans";
+  font-weight: bold;
+}
+
+
+.controles {
+  display: flex;
+  gap: 2px;
+
+  margin-right: 3px;
+}
+
+
+.controles button {
+  width: 23px;
+  height: 23px;
+
+  padding: 0;
+
+  background: #d8d1bd;
+
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+
+  border-right: 2px solid #5c5a53;
+  border-bottom: 2px solid #5c5a53;
+
+  font-weight: bold;
+}
+
+
+.janela-conteudo {
+  padding: 18px;
+}
+
+
+/* ==============================
+   MANCHETE
+================================ */
+
+.categoria,
+.tag {
+  display: inline-block;
+
+  background: var(--verde);
+
+  color: white;
+
+  padding: 5px 9px;
+
+  font-family: "Pixelify Sans";
+  font-size: 13px;
+}
+
+
+.destaque h2 {
+  font-family: Georgia, serif;
+
+  font-size: 37px;
+  line-height: 1;
+
+  margin:
+    14px 0
+    8px;
+}
+
+
+.subtitulo {
+  font-size: 17px;
+
+  line-height: 1.5;
+}
+
+
+.imagem-placeholder {
+  min-height: 290px;
+
+  background:
+    repeating-linear-gradient(
+      45deg,
+      #cac4b4,
+      #cac4b4 10px,
+      #d9d3c2 10px,
+      #d9d3c2 20px
+    );
+
+  border: 2px inset #999487;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 18px 0;
+
+  font-family: "Pixelify Sans";
+
+  color: #777;
+}
+
+
+/* ==============================
+   BOTÕES
+================================ */
+
+.botao-retro {
+  background: #d8d1bd;
+
+  padding: 7px 14px;
+
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+
+  border-right: 2px solid #5f5b50;
+  border-bottom: 2px solid #5f5b50;
+
+  font-family: "Pixelify Sans";
+
+  cursor: pointer;
+}
+
+
+.botao-retro:active {
+  border-top: 2px solid #5f5b50;
+  border-left: 2px solid #5f5b50;
+
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+
+  transform: translate(1px, 1px);
+}
+
+
+/* ==============================
+   QUADRINHOS
+================================ */
+
+.titulo-secao {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.titulo-secao h2 {
+  margin: 0 0 15px;
+
+  font-family: "Pixelify Sans";
+}
+
+
+.quadrinho {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 8px;
+}
+
+
+.quadro {
+  aspect-ratio: 1 / 1;
+
+  border: 3px solid #222;
+
+  background:
+    radial-gradient(
+      circle,
+      #bdb6a3 1px,
+      transparent 1px
+    );
+
+  background-size: 5px 5px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Pixelify Sans";
+}
+
+
+/* ==============================
+   NOTÍCIAS
+================================ */
+
+.noticias-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px;
+}
+
+
+.card-noticia {
+  background: var(--papel-claro);
+
+  padding: 18px;
+
+  border: 2px solid #817d70;
+
+  box-shadow: 3px 3px rgba(0,0,0,.15);
+}
+
+
+.card-noticia h3 {
+  font-family: Georgia, serif;
+
+  font-size: 23px;
+
+  margin: 12px 0;
+}
+
+
+.card-noticia a {
+  color: var(--azul);
+
+  font-family: "Pixelify Sans";
+
+  font-weight: bold;
+}
+
+
+/* ==============================
+   ÚLTIMAS NOTÍCIAS
+================================ */
+
+.lista-noticias {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+.lista-noticias li {
+  padding: 12px 5px;
+
+  border-bottom: 1px solid #aaa494;
+
+  line-height: 1.4;
+}
+
+
+.lista-noticias span {
+  display: block;
+
+  color: var(--verde);
+
+  font-family: "Pixelify Sans";
+
+  font-weight: bold;
+}
+
+
+/* ==============================
+   ENQUETE
+================================ */
+
+.sidebar label {
+  display: block;
+
+  margin: 12px 0;
+}
+
+
+/* ==============================
+   PUBLICIDADE
+================================ */
+
+.publicidade {
+  padding: 18px;
+
+  text-align: center;
+
+  background: #d5ceb8;
+
+  border: 2px dashed #454238;
+}
+
+
+.publicidade small {
+  display: block;
+
+  margin-bottom: 12px;
+}
+
+
+.publicidade strong {
+  display: block;
+
+  font-family: "Pixelify Sans";
+
+  font-size: 22px;
+}
+
+
+/* ==============================
+   RODAPÉ
+================================ */
+
+footer {
+  max-width: 1180px;
+
+  margin: 20px auto;
+
+  padding: 12px 16px;
+
+  background: var(--verde);
+
+  color: #eee8d6;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-family: "Pixelify Sans";
+
+  border: 2px solid #123c38;
+}
+
+
+/* ==============================
+   RESPONSIVO
+================================ */
+
+@media (max-width: 800px) {
+
+  .pagina {
+    grid-template-columns: 1fr;
+
+    margin: 10px;
+  }
+
+  .topo,
+  .menu,
+  footer {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .topo {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .data {
+    text-align: left;
+  }
+
+  .quadrinho {
+    grid-template-columns: 1fr;
+  }
+
+  .noticias-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu {
+    overflow-x: auto;
+  }
+
+}
+
+/* ========================================
+   QUADRINHOS LATERAIS
+======================================== */
+
+.quadrinhos-lateral {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+
+/* título da seção */
+
+.titulo-quadrinhos {
+  background: var(--verde);
+  color: #f3eddb;
+
+  border: 2px solid #0d302d;
+
+  padding: 7px 10px;
+
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
+  box-shadow:
+    inset 1px 1px #698d84,
+    inset -1px -1px #082b28;
+}
+
+
+.titulo-quadrinhos span {
+  margin-right: 5px;
+}
+
+
+/* CARD */
+
+.anuncio-quadrinho {
+  background: #e6dfcc;
+
+  border: 2px solid #6f6b60;
+
+  padding: 4px;
+
+  box-shadow:
+    inset 1px 1px white,
+    inset -1px -1px #aaa493,
+    3px 3px rgba(0,0,0,.18);
+}
+
+
+/* barra superior */
+
+.quadrinho-topo {
+  background: var(--verde);
+
+  color: #f4eedc;
+
+  padding: 5px 7px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: "Pixelify Sans", sans-serif;
+
+  font-size: 12px;
+}
+
+
+/* área da imagem */
+
+.quadrinho-imagem {
+  margin-top: 4px;
+
+  background: #f7f3e8;
+
+  border:
+    1px solid #777266;
+
+  overflow: hidden;
+}
+
+
+.quadrinho-imagem img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  /* efeito de impressão */
+  filter:
+    contrast(.97)
+    saturate(.88);
+
+  transition:
+    filter .15s,
+    transform .15s;
+}
+
+
+/* pequeno efeito de link antigo */
+
+.anuncio-quadrinho:hover img {
+  filter:
+    contrast(1)
+    saturate(1);
+
+  transform: scale(1.015);
+}
+
+
+/* informações */
+
+.quadrinho-info {
+  padding: 9px 7px 7px;
+
+  border-top: 1px solid #aaa493;
+}
+
+
+.quadrinho-info strong {
+  display: block;
+
+  font-family: "Pixelify Sans", sans-serif;
+
+  font-size: 16px;
+
+  color: #272720;
+
+  margin-bottom: 5px;
+}
+
+
+.quadrinho-info span {
+  color: #164f72;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 11px;
+
+  text-decoration: underline;
+
+  cursor: pointer;
+}
+
+
+/* deixa ainda mais parecido
+   com anúncio de jornal antigo */
+
+.anuncio-quadrinho:nth-child(even) {
+  transform: rotate(.15deg);
+}
+
+.anuncio-quadrinho:nth-child(odd) {
+  transform: rotate(-.1deg);
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+
+  .quadrinhos-lateral {
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+  }
+
+  .titulo-quadrinhos {
+    grid-column: 1 / -1;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .quadrinhos-lateral {
+    grid-template-columns: 1fr;
+  }
+
+}

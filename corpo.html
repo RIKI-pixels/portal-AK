@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jornal Ozzy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Special+Elite&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="topo">
+
+    <div class="logo-area">
+      <h1>Jornal Ozzy</h1>
+      <p>Notícias, histórias e outras coisas importantes.</p>
+    </div>
+
+    <div class="data">
+      <strong>EDIÇÃO Nº 042</strong>
+      <span>DOMINGO • 04 OUT 2000</span>
+    </div>
+
+  </header>
+
+
+  <nav class="menu">
+    <a href="#">Início</a>
+    <a href="#">Notícias</a>
+    <a href="#">Quadrinhos</a>
+    <a href="#">Arquivo</a>
+    <a href="#">Sobre</a>
+  </nav>
+
+
+  <main class="pagina">
+
+    <!-- COLUNA PRINCIPAL -->
+    <section class="conteudo">
+
+      <article class="janela destaque">
+
+        <div class="barra-janela">
+          <span>NOTICIA_PRINCIPAL.TXT</span>
+
+          <div class="controles">
+            <button>—</button>
+            <button>□</button>
+            <button>×</button>
+          </div>
+        </div>
+
+        <div class="janela-conteudo">
+
+          <span class="categoria">URGENTE</span>
+
+          <h2>Algo muito estranho aconteceu no centro da cidade</h2>
+
+          <p class="subtitulo">
+            Moradores afirmam ter visto luzes misteriosas durante
+            a madrugada. Nossa equipe foi investigar.
+          </p>
+
+          <div class="imagem-placeholder">
+            FOTO DA MATÉRIA
+          </div>
+
+          <p>
+            Tudo começou por volta das três horas da manhã.
+            Segundo testemunhas, uma forte luz azul apareceu
+            atrás dos prédios antigos do centro.
+          </p>
+
+          <button class="botao-retro">
+            Ler matéria completa →
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- QUADRINHO -->
+
+      <article class="janela">
+
+        <div class="barra-janela">
+          <span>QUADRINHO_DO_DIA.EXE</span>
+
+          <div class="controles">
+            <button>—</button>
+            <button>□</button>
+            <button>×</button>
+          </div>
+        </div>
+
+        <div class="janela-conteudo">
+
+          <div class="titulo-secao">
+            <h2>TIRINHA DO DIA</h2>
+            <span>por Fulano da Silva</span>
+          </div>
+
+          <div class="quadrinho">
+
+            <div class="quadro">
+              <span>QUADRO 01</span>
+            </div>
+
+            <div class="quadro">
+              <span>QUADRO 02</span>
+            </div>
+
+            <div class="quadro">
+              <span>QUADRO 03</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- NOTÍCIAS MENORES -->
+
+      <section class="noticias-grid">
+
+        <article class="card-noticia">
+          <span class="tag">CIDADE</span>
+
+          <h3>Prefeitura anuncia novidade para esta semana</h3>
+
+          <p>
+            A mudança deve começar já na próxima segunda-feira.
+          </p>
+
+          <a href="#">CONTINUAR LENDO ></a>
+        </article>
+
+
+        <article class="card-noticia">
+          <span class="tag">TECNOLOGIA</span>
+
+          <h3>A internet está ficando rápida demais?</h3>
+
+          <p>
+            Especialistas discutem o futuro da rede mundial.
+          </p>
+
+          <a href="#">CONTINUAR LENDO ></a>
+        </article>
+
+      </section>
+
+    </section>
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+      <div class="janela">
+
+        <div class="barra-janela">
+          <span>ULTIMAS_NOTICIAS</span>
+        </div>
+
+        <div class="janela-conteudo">
+
+          <ul class="lista-noticias">
+
+            <li>
+              <span>18:42</span>
+              Chuva forte surpreende moradores
+            </li>
+
+            <li>
+              <span>17:30</span>
+              Feira municipal acontece amanhã
+            </li>
+
+            <li>
+              <span>16:15</span>
+              Computadores invadem as escolas
+            </li>
+
+            <li>
+              <span>14:02</span>
+              Novo fliperama abre no centro
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <div class="janela">
+
+        <div class="barra-janela">
+          <span>ENQUETE.EXE</span>
+        </div>
+
+        <div class="janela-conteudo">
+
+          <h3>Você acredita em extraterrestres?</h3>
+
+          <label>
+            <input type="radio" name="enquete">
+            Sim
+          </label>
+
+          <label>
+            <input type="radio" name="enquete">
+            Não
+          </label>
+
+          <label>
+            <input type="radio" name="enquete">
+            Talvez...
+          </label>
+
+          <button class="botao-retro">
+            VOTAR
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <div class="publicidade">
+        <small>PUBLICIDADE</small>
+
+        <strong>VOCÊ PRECISA DE UM COMPUTADOR!</strong>
+
+        <p>
+          Pentium III<br>
+          128MB RAM<br>
+          HD 20GB
+        </p>
+
+        <button class="botao-retro">
+          CLIQUE AQUI!!!
+        </button>
+      </div>
+
+    </aside>
+
+  </main>
+
+
+  <footer>
+
+    <span>GAZETA 2000 © 2000</span>
+
+    <span>
+      Melhor visualizado em 800x600
+    </span>
+
+  </footer>
+
+</body>
+</html>
