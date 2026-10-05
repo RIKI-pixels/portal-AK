@@ -1,18 +1,32 @@
 :root {
-  --verde: #174c48;
-  --verde-escuro: #103b38;
 
-  --papel: #ddd6c3;
-  --papel-claro: #eee9db;
+  /* PALETA JORNAL OZZY */
 
-  --azul: #286392;
-  --azul-claro: #397caf;
+  --rosa: #E0949E;
+  --rosa-claro: #E3BABE;
 
-  --borda: #777468;
+  --creme: #F7EFDA;
 
-  --texto: #262822;
+  --oliva: #98976B;
+
+  --marrom: #705E50;
+
+
+  /* CORES FUNCIONAIS */
+
+  --verde: #98976B;
+  --verde-escuro: #705E50;
+
+  --papel: #E3BABE;
+  --papel-claro: #F7EFDA;
+
+  --azul: #E0949E;
+  --azul-claro: #E3BABE;
+
+  --borda: #705E50;
+
+  --texto: #3f342d;
 }
-
 
 /* ==============================
    BASE
